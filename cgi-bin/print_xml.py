@@ -42,6 +42,8 @@ def print_xml(verbrauchsort, category_dict, url, version, renums, ignore_list=[]
 			category = category_dict[result.get("SPEISE").strip()]
 		category_element = date_element.find(f"./category[@name='{category}']")
 		name = result.get("AUSGABETEXT")
+		if len(name) == 0:
+			continue
 		if len(name) > 250:
 			name = renums.sub("", name)
 		if len(name) > 250:
