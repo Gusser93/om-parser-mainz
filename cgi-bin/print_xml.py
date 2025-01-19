@@ -64,6 +64,6 @@ def print_xml(verbrauchsort, category_dict, url, version, renums, ignore_list=[]
 			if len(result) == 0:
 				day.remove(result)
 
-	print("Content-Type: application/xml\n\n")
+	print("Content-Type: application/xml\n")
 	#print('<?xml version="1.0" encoding="UTF-8"?>')
 	print(ET.tostring(root_element, encoding="unicode", method="xml", xml_declaration=True))
