@@ -1,3 +1,5 @@
+#!/usr/bin/python3.12
+
 import re
 from print_xml import print_xml
 
